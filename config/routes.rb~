@@ -13,7 +13,7 @@ Fantasyfootball::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :players
-  resources :users, :only => :show
+  resources :users
   resources :sessions, only: [:new, :create, :destroy]
   
   match '/login', to: 'sessions#new', via: :get
