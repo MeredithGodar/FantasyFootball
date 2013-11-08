@@ -1,0 +1,16 @@
+%h1 Login
+
+%p.login= link_to 'Sign in with twitter', "/auth/twitter"
+%p.login= link_to 'Sign in with github', "/auth/github"
+
+
+=form_tag users_path do
+   =label :user, :user_id, 'User-ID'
+   =text_field :user, 'user_id'
+    
+   =label :user, :password, 'Password'
+   =text_field :user, 'password'
+  
+   =submit_tag 'Sign In'
+  
+=link_to 'Create Account', new_user_path

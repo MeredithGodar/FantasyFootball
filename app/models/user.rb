@@ -1,11 +1,11 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
+#<<<<<<< HEAD
   # attr_accessible :title, :body
   has_many :players
-=======
+#=======
 	attr_accessible :user_id, :email, :password, :password_confirmation
 	has_secure_password
->>>>>>> faf9790dd038c5772dd2159da3afc1ebc94fabd7
+#>>>>>>> faf9790dd038c5772dd2159da3afc1ebc94fabd7
   
   before_save{|user| user.email=user.email.downcase}
   before_save :create_session_token
