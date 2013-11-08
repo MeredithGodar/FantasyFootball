@@ -10,7 +10,7 @@
   = label :player, :position, 'Position'
   = select :player, :position, ['QB','RB','WR','TE','D','K']
 
-  = label :player, :team, 'Team'
-  = text_field :player, 'team'
+  = label :player, :release_date, 'Released On'
+  = date_select :player, :release_date
 
   = submit_tag 'Update Player Info'
