@@ -16,7 +16,7 @@ class PlayersController < ApplicationController
 
   def create
     @player = Player.create!(params[:player])
-    flash[:notice] = "#{@player.name} was successfully created."
+    flash[:notice] = "#{@player.name} was successfully added."
     redirect_to players_path
   end
 
@@ -28,7 +28,7 @@ class PlayersController < ApplicationController
     @player = Player.find params[:id]
     @player.update_attributes!(params[:player])
     flash[:notice] = "#{@player.name} was successfully updated."
-    redirect_to movie_path(@player)
+    redirect_to player_path(@player)
   end
 
   def destroy
