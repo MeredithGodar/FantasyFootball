@@ -14,9 +14,10 @@ Fantasyfootball::Application.routes.draw do
   #   resources :products
   resources :players
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   
   match '/login', to: 'sessions#new', via: :get
-  match '/login_create', to: 'sessions#create', via: :post
+  match '/login_create', to: 'users#new', via: :post
   match '/logout', to: 'sessions#destroy', via: :delete
   # Sample resource route with options:
   #   resources :products do
