@@ -1,12 +1,12 @@
 %h1 Login
 
-=form_tag login_create_path do
+=form_tag sessions_path do
   
-  = label :user, :user_id, 'User-ID'
-  = text_field :user, 'user_id'
+  = label :session, :email, 'E-mail'
+  = text_field :session, 'email'
     
-  = label :user, :email, 'E-mail'
-  = text_field :user, 'email'
+  = label :user, :session, 'Password'
+  = text_field :session, 'password'
     
   =submit_tag 'Login to Account'
 

@@ -34,3 +34,6 @@ gem 'jquery-rails'
 # To use debugger
 #gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'haml'
+
+# For Password Encryption
+gem 'bcrypt-ruby', '3.0.1'

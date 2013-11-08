@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
-#before_filter :set_current_user
+	before_filter :set_current_user
   def show
     id = params[:id] # retrieve player ID from URI route
     @player = Player.find(id) # look up player by unique ID

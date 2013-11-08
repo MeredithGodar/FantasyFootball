@@ -1,0 +1,11 @@
+%h2 Profile for #{@user.user_id}
+
+%ul#details
+	%li
+		user_id:
+		=@user.user_id
+	%li
+		email:
+		=@user.email
+		
+	= link_to 'Back to players page', players_path
