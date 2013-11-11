@@ -1,4 +1,4 @@
-class UsersControllser < ApplicationController
+class UsersController < ApplicationController
 	before_filter :set_current_user, :only=>['show', 'edit', 'update', 'delete']
 
 	def show
@@ -12,6 +12,9 @@ class UsersControllser < ApplicationController
 	end
 	
 	def create
+	
+	  puts("NEW USER INFO")
+	  puts(params[:user])
 		@user = User.new(params[:user])
 		if @user.save
 			flash[:notice] = "Account created successfully!"

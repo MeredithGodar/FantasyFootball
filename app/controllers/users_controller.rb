@@ -12,6 +12,9 @@ class UsersController < ApplicationController
 	end
 	
 	def create
+	
+	  puts("NEW USER INFO")
+	  puts(params[:user])
 		@user = User.new(params[:user])
 		if @user.save
 			flash[:notice] = "Account created successfully!"
