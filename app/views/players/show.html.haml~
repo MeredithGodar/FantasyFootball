@@ -10,10 +10,6 @@
     Team:
     = @player.team
 
-%h3 Description:
-
-%p#description= @player.description
-
 = link_to 'Edit', edit_player_path(@player)
 = button_to 'Delete', player_path(@player), :method => :delete, :confirm => 'Are you sure?'
-= link_to 'Back to Team list', players_path
+= link_to 'Back to Team', players_path

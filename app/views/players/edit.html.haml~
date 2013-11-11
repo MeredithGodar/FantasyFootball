@@ -10,7 +10,9 @@
   = label :player, :position, 'Position'
   = select :player, :position, ['QB','RB','WR','TE','D','K']
 
-  = label :player, :release_date, 'Released On'
-  = date_select :player, :release_date
+  = label :player, :team, 'Team'
+  = select :player, :team, ['Chicago Bears','Arizona Cardinals','Green Bay Packers','New York Giants','Detroit Lions','Washington Redskins','Pittsburgh Steelers','Philadelphia Eagles','St. Louis Rams','San Francisco 49ers','Cleveland Browns','Indianapolis Colts','Dallas Cowboys','Oakland Raiders','New England Patriots','Tennessee Titans','Denver Broncos','San Diego Chargers','New York Jets','Kansas City Chiefs','Buffalo Bills','Minnesota Vikings','Miami Dolphins','Atlanta Falcons','New Orleans Saints','Cincinnati Bengals','Seattle Seahawks','Tampa Bay Buccaneers','Jacksonville Jaguars','Carolina Panthers','Baltimore Ravens','Houston Texans']
 
   = submit_tag 'Update Player Info'
+  
+= link_to 'Cancel', players_path

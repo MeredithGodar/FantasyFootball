@@ -14,8 +14,8 @@ class SessionsController < ApplicationController
 		#puts(user)
 		#if user == nil
 		  auth = request.env["omniauth.auth"]
-		  puts ("THIS IS AUTH")
-		  puts(auth)
+		  #puts ("THIS IS AUTH")
+		  #puts(auth)
       user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) ||User.create_with_omniauth(auth)
       session[:session_token] = user.session_token
       redirect_to players_path
