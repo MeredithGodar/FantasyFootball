@@ -9,7 +9,7 @@
    =text_field :user, 'user_id'
     
    =label :user, :password, 'Password'
-   =text_field :user, 'password'
+   =password_field :user, 'password'
   
    =submit_tag 'Sign In'
   
