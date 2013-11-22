@@ -19,7 +19,7 @@ Fantasyfootball::Application.routes.draw do
   #match '/login', to: 'sessions#new', via: :get
   #match '/login_create', to: 'users#new', via: :post
   #match '/logout', to: 'sessions#destroy', via: :delete
-  match "auth/:provider/callback" => 'sessions#create'
+  match "auth/:provider/callback" => 'sessions#create', via: :get
   match '/signout' => 'sessions#destroy', :as => :signout
   # Sample resource route with options:
   #   resources :products do

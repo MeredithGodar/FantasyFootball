@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   #has_many :players
 #=======
-	attr_accessible :user_id, :email, :password, :password_confirmation
+	#attr_accessible :user_id, :email, :password, :password_confirmation
 	#has_secure_password
 #>>>>>>> faf9790dd038c5772dd2159da3afc1ebc94fabd7
   
@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
   #validates :password, presence: true, length: {minimum: 8}
   #validates :password_confirmation, presence: true
   
-  private
   def create_session_token
   	self.session_token = SecureRandom.urlsafe_base64
   end
