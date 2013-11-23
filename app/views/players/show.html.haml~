@@ -9,7 +9,21 @@
   %li
     Team:
     = @player.team
-
-= link_to 'Edit', edit_player_path(@player)
+  %li
+    Jersey Number:
+    = @player.number
+  %li
+    College:
+    = @player.college
+  %li
+    Height:
+    = @player.height
+  %li
+    Weight:
+    = @player.weight
+  %li
+    Birthdate:
+    = @player.birthdate  
+    
 = button_to 'Delete', player_path(@player), :method => :delete, :confirm => 'Are you sure?'
 = link_to 'Back to Team', players_path

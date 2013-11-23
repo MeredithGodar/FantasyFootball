@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 #<<<<<<< HEAD
   # attr_accessible :title, :body
-  #has_many :players
+  has_many :players
 #=======
 	attr_accessible :user_id, :email, :password, :password_confirmation
 	#has_secure_password

@@ -160,6 +160,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
+  multi_json (~> 1.8.1)
   omniauth-github
   omniauth-twitter
   pg
