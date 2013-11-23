@@ -172,6 +172,7 @@ DEPENDENCIES
   haml
   jquery-rails
   less-rails
+  multi_json (~> 1.8.1)
   omniauth-github
   omniauth-twitter
   pg

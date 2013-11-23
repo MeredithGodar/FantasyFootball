@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <!--<div class="container">
+    <div class="container">
         <div class="row">
           <div class="span9">
             <%= bootstrap_flash %>
@@ -69,13 +69,13 @@
               <h3>Sidebar</h3>
               <ul class="nav nav-list">
                 <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Link1", "/path1"  %></li>
+                <!--<li><%= link_to "Link1", "/path1"  %></li>
                 <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
+                <li><%= link_to "Link3", "/path3"  %></li>-->
               </ul>
             </div><!--/.well -->
-          <!--</div><!--/span-->
-        <!--</div><!--/row-->
+          </div><!--/span-->
+        </div><!--/row-->
 
       <footer>
         <p>&copy; SELT Group 2</p>

@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'json'
 gem 'rails', '3.2.13'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
