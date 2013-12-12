@@ -1,13 +1,13 @@
 !!! 5
 %html
   %head
-    %title Fantasy Football!
-    = stylesheet_link_tag 'application'
-    = javascript_include_tag 'application'
+    %title SELT Fantasy Football
+    = stylesheet_link_tag 'bootstrap_and_override.css.less'
+    = javascript_include_tag 'bootstrap.js.coffee'
     = csrf_meta_tags
 
   %body
-    %h1.title Fantasy Football!
+    %h1.title SELT Fantasy Football
     #main
       - if flash[:notice]
         #notice.message= flash[:notice]
