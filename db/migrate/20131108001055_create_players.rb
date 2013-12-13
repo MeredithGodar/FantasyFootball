@@ -13,6 +13,8 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :url
       t.string :number
       t.timestamps
+      t.belongs_to :user
+      t.references 'stat'
     end
   end
 

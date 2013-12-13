@@ -9,6 +9,7 @@ class CreateUsers < ActiveRecord::Migration
 			t.string :uid
 			t.string :session_token
 			t.timestamps
+			t.references 'players'
 		end
 	end
 	
