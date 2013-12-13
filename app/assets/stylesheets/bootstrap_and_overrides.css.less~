@@ -1,18 +1,21 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top: 60px; background-image:url('unnamed.jpg'); background-repeat:no-repeat; background-position:center; background-attachement:fixed; background-size:cover; }
+body { padding-top:60px; background-image:url('unnamed.jpg'); background-repeat:no-repeat; background-position:center; background-attachement:fixed; background-size:cover; }
 .navbar .brand { font-size: 25px; color:#000000; }
 h1 { color:#ffffff; }
 h2 { color:#ffffff; }
 li { color:#ffffff; font-size:18px; }
 label { color:#ffffff; }
-p { color:#ffffff; font-size:10px }
+p { color:#ffffff; font-size:10px; }
 th { color:#ffffff; font-size:18px; }
 td { color:#ffffff; font-size:18px; }
-href { font-size: 18px }
-a { color:#2ECCFA;; font-size:18px }
-table#players { margin:10px; border-collapse:collapse; width:100%; border-bottom:1px #ffffff; background-color:#000000 }
-table#players th { border:2px #ffffff; font-weight:bold; background-color:#000000; }
-table#players th, table#players td { padding:4px; text-align:left; border:1px #ffffff; }
+href { font-size:18px; }
+a { color:#2ECCFA; font-size:18px; }
+table#players { margin:10px; border-collapse:collapse; width:100%; border-bottom:2px solid black; background-color:#000000; }
+table#players th { border:2px solid white; font-weight:bold; background-color:#000000; }
+table#players th, table#players td { padding:4px; text-align:left; }
+table#stats { margin:10px; border-collapse:collapse; width:100%; border-bottom:2px solid black; background-color:#000000; }
+table#stats th { border:2px solid white; font-weight:bold; background-color:#000000; }
+table#stats th, table#stats td { padding:4px; text-align:left; }
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
@@ -39,5 +42,5 @@ table#players th, table#players td { padding:4px; text-align:left; border:1px #f
 //
 // If you'd like to override bootstrap's own variables, you can do so here as well
 // See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
-
+//
 @linkColor: #2ECCFA;

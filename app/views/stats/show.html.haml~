@@ -1,5 +1,8 @@
 -# in app/views/stats/show.html.haml
-
+- if @current_user
+  %p.welcome You are logged in as #{@current_user.name}
+  =link_to 'Log Out', signout_path, :method => :delete
+  
 %h2 Stats for #{@player.name}
 
 %table#stats
@@ -26,7 +29,7 @@
       %td= @player.stat.pass_comp 
       %td= @player.stat.pass_yrd 
       %td= @player.stat.pass_td 
-      %td= @player.stat.int.
+      %td= @player.stat.int
       %td= @player.stat.rush_att
       %td= @player.stat.rush_yrd
       %td= @player.stat.rush_td
