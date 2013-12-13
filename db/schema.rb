@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "name"
     t.string   "position"
     t.string   "team"
-    t.string   "gsis"
     t.string   "college"
     t.string   "birthdate"
     t.string   "user"
