@@ -26,7 +26,7 @@
       %td= @player.stat.pass_comp 
       %td= @player.stat.pass_yrd 
       %td= @player.stat.pass_td 
-      %td= @player.stat.int.
+      %td= @player.stat.int
       %td= @player.stat.rush_att
       %td= @player.stat.rush_yrd
       %td= @player.stat.rush_td

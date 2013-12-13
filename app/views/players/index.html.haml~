@@ -1,6 +1,7 @@
 -#  This file is app/views/players/index.html.haml
-%p.welcome You are logged in as #{user.name}
-=link_to 'Log Out', signout_path, :method => :delete
+- if @current_user
+  %p.welcome You are logged in as #{@current_user.name}
+  =link_to 'Log Out', signout_path, :method => :delete
 %h1 Your Team
 
 %table#players
