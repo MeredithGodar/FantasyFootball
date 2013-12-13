@@ -14,7 +14,6 @@
 ActiveRecord::Schema.define(:version => 20131212224101) do
 
   create_table "players", :force => true do |t|
-    t.integer  "user_id"
     t.string   "name"
     t.string   "position"
     t.string   "team"
@@ -25,10 +24,10 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "weight"
     t.string   "url"
     t.string   "number"
-<<<<<<< HEAD
-    t.integer  "stat_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+    t.integer  "stat_id"
   end
 
   create_table "stats", :force => true do |t|
@@ -48,8 +47,6 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.integer  "kick_att"
     t.integer  "kick_fg"
     t.integer  "kick_pat"
-=======
->>>>>>> 0c04f9808d20f91e53ac1465d698fb775bfa8c7a
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -60,9 +57,9 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "provider"
     t.string   "uid"
     t.string   "session_token"
-    t.integer  "player_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "players_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
