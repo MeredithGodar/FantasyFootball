@@ -11,7 +11,7 @@
 				%th More Info
 				%th Stats
 		%tbody
-			- @players.each do |player|
+			- @current_user.players.each do |player|
 				%tr
 					%td= player[:name] 
 					%td= player[:position]
