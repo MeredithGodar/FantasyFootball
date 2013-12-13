@@ -1,26 +1,105 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top:60px; background-image:url('unnamed.jpg'); background-repeat:no-repeat; background-position:center; background-attachement:fixed; background-size:cover; }
-.navbar .brand { font-size: 25px; color:#000000; }
-h1 { color:#ffffff; }
-h2 { color:#ffffff; }
-li { color:#ffffff; font-size:18px; }
-label { color:#ffffff; }
-p { color:#ffffff; font-size:10px; }
-th { color:#ffffff; font-size:18px; }
-td { color:#ffffff; font-size:18px; }
-href { font-size:18px; }
-a { color:#2ECCFA; font-size:18px; }
-table#players { margin:10px; border-collapse:collapse; width:100%; border-bottom:2px solid black; background-color:#000000; }
-table#players th { border:2px solid white; font-weight:bold; background-color:#000000; }
-table#players th, table#players td { padding:4px; text-align:left; }
-table#stats { margin:10px; border-collapse:collapse; width:100%; border-bottom:2px solid black; background-color:#000000; }
-table#stats th { border:2px solid white; font-weight:bold; background-color:#000000; }
-table#stats th, table#stats td { padding:4px; text-align:center; }
+
+body { 
+	padding-top: 60px; 
+	background-color: black;
+	background-image: url('unnamed.jpg'); 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	background-attachement: fixed; 
+	background-size: cover; 
+}
+
+.navbar .brand { 
+	font-size: 25px; 
+	color: #000000; 
+}
+
+h1 { 
+	color: #ffffff; 
+}
+
+h2 { 
+	color: #ffffff; 
+}
+
+li { 
+	color: #ffffff; 
+	font-size: 18px; 
+}
+
+label { 
+	color: #ffffff; 
+}
+
+p { 
+	color: #ffffff; 
+	font-size: 10px; 
+}
+
+th { 
+	color: #ffffff; 
+	font-size: 18px; 
+}
+
+td { 
+	color: #ffffff; 
+	font-size: 18px; 
+}
+
+href { 
+	font-size: 18px; 
+}
+
+a { 
+	color: #2ECCFA; 
+	font-size: 18px; 
+}
+
+table#players {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table#players th {
+  border: 2px solid white;
+
+  background-color: black;
+}
+
+table#players th, table#players td {
+  padding: 4px;
+  text-align: left;
+}
+
+table#stats { 
+	margin: 10px; 
+	border-collapse: collapse; 
+	width: 100%; 
+}
+
+table#stats th { 
+	border: 2px solid white; 
+	font-weight: bold; 
+	background-color: black;
+}
+
+table#stats th, table#stats td { 
+	padding: 4px; 
+	text-align: center; 
+}
+
+div.row {
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px;
+}
+
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
-@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
-@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+//@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+//@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
 
 // Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
 @fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
