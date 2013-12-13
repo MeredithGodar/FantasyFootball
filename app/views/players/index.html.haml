@@ -1,4 +1,5 @@
 -#  This file is app/views/players/index.html.haml
+-#=link_to 'Log Out', signout_path, :method => :delete
 %h1 Your Team
 
 %table#players
@@ -10,7 +11,7 @@
       %th More Info
       %th Stats
   %tbody
-    - @players.each do |player|
+    - @current_user.players.each do |player|
       %tr
         %td= player[:name] 
         %td= player[:position]

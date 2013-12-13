@@ -1,9 +1,6 @@
 source 'http://rubygems.org'
 
-<<<<<<< HEAD
-gem 'date'
-=======
->>>>>>> 0c04f9808d20f91e53ac1465d698fb775bfa8c7a
+gem 'open-uri'
 gem 'multi_json', '~>1.8.1'
 gem 'rails', '3.2.13'
 gem 'omniauth-twitter'
@@ -32,10 +29,6 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'therubyracer'
   gem 'less-rails'
-<<<<<<< HEAD
-=======
-  gem 'twitter-bootswatch-rails', '~> 3.0.2'
->>>>>>> 0c04f9808d20f91e53ac1465d698fb775bfa8c7a
 end
 
 gem 'jquery-rails'
