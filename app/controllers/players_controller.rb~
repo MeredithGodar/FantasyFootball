@@ -5,12 +5,14 @@ class PlayersController < ApplicationController
     @player = Player.find(id) # look up player by unique ID
     puts("PLAYER HERE")
     puts(@player)
-    puts(@player.pass_att)
+    #puts(@player.pass_att)
     # will render app/views/players/show.<extension> by default
   end
 
   def index
     @players = Player.all
+    puts("HERE IS THE CURRENT USER")
+    puts(@current_user)
   end
 
   def new
@@ -49,10 +51,19 @@ class PlayersController < ApplicationController
     flag = false
     players.each do |x|
       if(x[1]["full_name"].eql?(params[:player][:name]) and (Player.find_by_name(params[:player][:name]) == nil))
-        player = {:name => x[1]["full_name"], :position => x[1]["position"], :team => x[1]["team"], :college => x[1]["college"], :birthdate => x[1]["birthdate"], :height => x[1]["height"], :weight => x[1]["weight"], :number => x[1]["number"]}
-        puts(x)
-        @player = Player.create!(player)
-        @player.create_stat(:pass_att => 0, :pass_comp => 0, :pass_yrd => 0, :pass_td => 0, :int => 0, :rush_att => 0, :rush_yrd => 0, :rush_td => 0, :fumble => 0, :rec => 0, :rec_yrd => 0, :rec_td => 0, :kick_att => 0, :kick_fg => 0, :kick_pat => 0)
+        player = {:name => x[1]["full_name"], :position => x[1]["position"], :team => x[1]["team"], :college => x[1]["college"], :birthdate => x[1]["birthdate"], :height => x[1]["height"], :weight => x[1]["weight"], :number => x[1]["number"], :gsis => x[1]["GSIS_ID"]}
+        puts(player)
+        @user = @current_user
+        puts("HERE IS THE CURRENT USER")
+        puts(@user)
+        @player = @current_user.players.create(player)
+        #@player.Stat.create!
+        #stats = Stat.get()
+        stats = Hash.new()
+        stats.merge!(Stat.get(@player))
+        @player.create_stat(stats)
+        #@player.create_stat(:pass_att => 0, :pass_comp => 0, :pass_yrd => 0, :pass_td => 0, :int => 0, :rush_att => 0, :rush_yrd => 0, :rush_td => 0, :fumble => 0, :rec => 0, :rec_yrd => 0, :rec_td => 0, :kick_att => 0, :kick_fg => 0, :kick_pat => 0)
+        #@current_user.players.create(@player)
         #@player.team = x[1]["team"]
         #@player.position = x[1]["position"]
         flash[:notice] = "#{@player.name} was successfully added."
