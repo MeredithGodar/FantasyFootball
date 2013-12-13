@@ -231,6 +231,8 @@
         0,
         0,
         0,
+        0,
+        null,
         null,
         null,
         null,
@@ -246,16 +248,11 @@
         0,
         0,
         0,
+        0,
+        0,
         null,
         null,
         1,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
         0,
         null,
         null,
@@ -271,6 +268,14 @@
         0,
         0,
         0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -283,6 +288,7 @@
         null,
         0,
         0,
+        null,
         null,
         0,
         null,
@@ -290,6 +296,7 @@
         null
       ],
       "/home/saasbook/Documents/project/app/models/player.rb": [
+        1,
         1,
         1,
         1,
@@ -320,6 +327,7 @@
         0,
         0,
         0,
+        0,
         null,
         null,
         null,
@@ -341,6 +349,31 @@
         0,
         null,
         null,
+        null
+      ],
+      "/home/saasbook/Documents/project/app/controllers/stats_controller.rb": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/saasbook/Documents/project/app/models/stat.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/home/saasbook/Documents/project/app/controllers/users_controller.rb": [
@@ -428,6 +461,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
@@ -480,6 +514,6 @@
         null
       ]
     },
-    "timestamp": 1386902263
+    "timestamp": 1386912224
   }
 }

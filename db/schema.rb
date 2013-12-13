@@ -14,7 +14,6 @@
 ActiveRecord::Schema.define(:version => 20131212224101) do
 
   create_table "players", :force => true do |t|
-    t.integer  "user_id"
     t.string   "name"
     t.string   "position"
     t.string   "team"
@@ -25,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "weight"
     t.string   "url"
     t.string   "number"
-    t.integer  "stat_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -57,7 +55,6 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "provider"
     t.string   "uid"
     t.string   "session_token"
-    t.integer  "player_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
