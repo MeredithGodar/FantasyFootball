@@ -14,6 +14,7 @@ Fantasyfootball::Application.routes.draw do
   #   resources :products
   resources :players
   resources :users
+  resources :stats
   resources :sessions, only: [:new, :create, :destroy]
   
   #match '/login', to: 'sessions#new', via: :get

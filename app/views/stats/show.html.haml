@@ -1,0 +1,43 @@
+-# in app/views/stats/show.html.haml
+
+%h2 Stats for #{@player.name}
+
+%table#stats
+  %thead
+    %tr
+      %th Passing Attempts
+      %th Passing Completions
+      %th Passing Yards
+      %th Passing Touchdowns
+      %th Interceptions
+      %th Rushing Attempts
+      %th Rushing Yards
+      %th Rushing Touchdowns
+      %th Fumbles
+      %th Receptions
+      %th Receiving Yards
+      %th Receiving Touchdowns
+      %th Field Goal Attempts
+      %th Field Goals Made
+      %th PAT's
+  %tbody
+    %tr
+      %td= @player.stat.pass_att
+      %td= @player.stat.pass_comp 
+      %td= @player.stat.pass_yrd 
+      %td= @player.stat.pass_td 
+      %td= @player.stat.int
+      %td= @player.stat.rush_att
+      %td= @player.stat.rush_yrd
+      %td= @player.stat.rush_td
+      %td= @player.stat.fumble
+      %td= @player.stat.rec
+      %td= @player.stat.rec_yrd
+      %td= @player.stat.rec_td
+      %td= @player.stat.kick_att
+      %td= @player.stat.kick_fg
+      %td= @player.stat.kick_pat  
+        
+
+
+= link_to 'Back to Team', players_path

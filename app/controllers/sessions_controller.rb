@@ -18,6 +18,7 @@ class SessionsController < ApplicationController
 		  #puts(auth)
       user = User.create_with_omniauth(auth) || User.find_by_provider_and_uid(auth["provider"], auth["uid"])
       session[:session_token] = user.session_token
+      flash[:notice] = "Welcome #{user.name}"
       redirect_to players_path
     #else
 		  #if user && user.authenticate(params[:session][:password])
