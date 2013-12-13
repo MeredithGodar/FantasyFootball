@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-12-12T21:23:44-08:00">2013-12-12T21:23:44-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-12-12T23:06:38-08:00">2013-12-12T23:06:38-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
       <tr>
         <td class="strong"><a href="#d5127b6b4b03aebedf8d10f146730c989f1acf56" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
         <td class="red strong">38.46 %</td>
-        <td>44</td>
+        <td>45</td>
         <td>13</td>
         <td>5</td>
         <td>8</td>
@@ -940,151 +940,157 @@
           <code class="ruby">      user = User.create_with_omniauth(auth) || User.find_by_provider_and_uid(auth[&quot;provider&quot;], auth[&quot;uid&quot;])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">      session[:session_token] = user.session_token</code>
+          <code class="ruby">      #session[:session_token] = user.session_token</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">      flash[:notice] = &quot;Welcome #{user.name}&quot;</code>
+          <code class="ruby">      cookies.permanent[:session_token] = user.session_token</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="22">
           
           
-          <code class="ruby">      redirect_to players_path</code>
+          <code class="ruby">      flash[:notice] = &quot;Welcome #{user.name}&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby">    #else</code>
+          <code class="ruby">      redirect_to players_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">		  #if user &amp;&amp; user.authenticate(params[:session][:password])</code>
+          <code class="ruby">    #else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">		  	#sign in and redirect to show page</code>
+          <code class="ruby">		  #if user &amp;&amp; user.authenticate(params[:session][:password])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">		  	#cookies.permanent[:session_token]=user.session_token</code>
+          <code class="ruby">		  	#sign in and redirect to show page</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">		  	#@current_user = user</code>
+          <code class="ruby">		  	#cookies.permanent[:session_token]=user.session_token</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">		  	#redirect_to players_path</code>
+          <code class="ruby">		  	#@current_user = user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">		  #else</code>
+          <code class="ruby">		  	#redirect_to players_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">		  	#flash.now[:warning] = 'Invalid email/password combination'</code>
+          <code class="ruby">		  #else</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">		  	#render 'new'</code>
+          <code class="ruby">		  	#flash.now[:warning] = 'Invalid email/password combination'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">		  #end</code>
+          <code class="ruby">		  	#render 'new'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby">		#end</code>
+          <code class="ruby">		  #end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">		#end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
           <code class="ruby">	</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
           <code class="ruby">	def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="missed" data-hits="0" data-linenumber="38">
           
           
           <code class="ruby">		session[:session_token] = nil</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">		#cookies.delete(:session_token)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">		#@current_user = nil</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="41">
           
           
           <code class="ruby">		flash[:notice] = 'You have logged out'</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
+        <li class="missed" data-hits="0" data-linenumber="42">
           
           
           <code class="ruby">		redirect_to users_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">end</code>
