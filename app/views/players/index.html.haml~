@@ -23,7 +23,7 @@
 - else
 	= link_to "Please sign in to access your team.", users_path, id: "sign_in"
 =======
-=link_to 'Log Out', signout_path, :method => :delete
+-#=link_to 'Log Out', signout_path, :method => :delete
 %h1 Your Team
 
 %table#players

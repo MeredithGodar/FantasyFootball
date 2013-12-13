@@ -16,12 +16,8 @@ class SessionsController < ApplicationController
 		  auth = request.env["omniauth.auth"]
 		  #puts ("THIS IS AUTH")
 		  #puts(auth)
-<<<<<<< HEAD
-      user = User.create_with_omniauth(auth) || User.find_by_provider_and_uid(auth["provider"], auth["uid"])
-      #session[:session_token] = user.session_token
-=======
       user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)
->>>>>>> userPlayers
+
       cookies.permanent[:session_token] = user.session_token
       flash[:notice] = "Welcome #{user.name}"
       puts("HERE IS YOUR SESSION TOKEN")
