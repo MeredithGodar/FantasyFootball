@@ -1,25 +1,23 @@
 -#  This file is app/views/players/index.html.haml
 - if @current_user
-  %p.welcome You are logged in as #{@current_user.name}
-  =link_to 'Log Out', signout_path, :method => :delete
-  
-%h1 Your Team
-
-%table#players
-  %thead
-    %tr
-      %th Name
-      %th Position
-      %th Team
-      %th More Info
-      %th Stats
-  %tbody
-    - @players.each do |player|
-      %tr
-        %td= player[:name] 
-        %td= player[:position]
-        %td= player[:team]
-        %td= link_to "Info", player_path(player)
-        %td= link_to "Stats", stat_path(player)
-        
-= link_to 'Add new player', new_player_path
+	%h1 Your Team
+	%table#players
+		%thead
+			%tr
+				%th Name
+				%th Position
+				%th Team
+				%th More Info
+				%th Stats
+		%tbody
+			- @players.each do |player|
+				%tr
+					%td= player[:name] 
+					%td= player[:position]
+					%td= player[:team]
+					%td= link_to "Info", player_path(player)
+					%td= link_to "Stats", stat_path(player)
+		    
+	= link_to 'Add new player', new_player_path
+- else
+	= link_to "Please sign in to access your team.", users_path, id: "sign_in"
