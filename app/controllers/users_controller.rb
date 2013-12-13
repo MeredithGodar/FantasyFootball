@@ -1,27 +1,27 @@
 class UsersController < ApplicationController
-	before_filter :set_current_user, :only=>['show', 'edit', 'update', 'delete']
+	#before_filter :set_current_user, :only=>['show', 'edit', 'update', 'delete']
 
-	def show
-		@user = @current_user
-		if !current_user?(params[:id])
-			flash[:warning]= 'You must be logged in to view your profile'
-		end
-	end
+	#def show
+		#@user = @current_user
+		#if !current_user?(params[:id])
+			#flash[:warning]= 'You must be logged in to view your profile'
+		#end
+	#end
 	
-	def new
-	end
+	#def new
+	#end
 	
-	def create
+	#def create
 	
-	  puts("NEW USER INFO")
-	  puts(params[:user])
-		@user = User.new(params[:user])
-		if @user.save
-			flash[:notice] = "Account created successfully!"
-			redirect_to @user
-		else
-			render 'new'
-		end
-	end
+	  #puts("NEW USER INFO")
+	  #puts(params[:user])
+		#@user = User.new(params[:user])
+		#if @user.save
+			#flash[:notice] = "Account created successfully!"
+			#redirect_to @user
+		#else
+			#render 'new'
+		#end
+	#end
 
 end
