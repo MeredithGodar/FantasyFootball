@@ -49,9 +49,9 @@
           <a class="brand" href="#">SELT Fantasy Football</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <% if @current_user %><!--<p>You are logged in as: <%= @current_user.name %> </p>-->
+              <li><%= link_to "Log Out", signout_path %></li>
+              <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
