@@ -1,4 +1,8 @@
 -#  This file is app/views/players/index.html.haml
+
+%p.Welcome. You are logged in as: #{user.name}
+= link_to 'Log Out', logout_path, :method => :delete
+
 %h1 Your Team
 
 %table#players
@@ -16,6 +20,9 @@
         %td= player[:position]
         %td= player[:team]
         %td= link_to "More about #{player.name}", player_path(player)
+<<<<<<< HEAD
         %td= link_to "#{player.name} Stats", stat_path(player)
+=======
+>>>>>>> 0c04f9808d20f91e53ac1465d698fb775bfa8c7a
         
 = link_to 'Add new player', new_player_path

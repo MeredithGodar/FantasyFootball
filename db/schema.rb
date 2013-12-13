@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.string   "weight"
     t.string   "url"
     t.string   "number"
+<<<<<<< HEAD
     t.integer  "stat_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -47,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20131212224101) do
     t.integer  "kick_att"
     t.integer  "kick_fg"
     t.integer  "kick_pat"
+=======
+>>>>>>> 0c04f9808d20f91e53ac1465d698fb775bfa8c7a
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
