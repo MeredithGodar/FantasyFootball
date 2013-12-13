@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+#gem 'open-uri'
 gem 'multi_json', '~>1.8.1'
 gem 'rails', '3.2.13'
 gem 'omniauth-twitter'

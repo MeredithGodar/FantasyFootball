@@ -4,7 +4,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :name
       t.string :position
       t.string :team
-      t.string :id
+      t.string :gsis
       t.string :college
       t.string :birthdate
       t.string :user

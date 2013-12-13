@@ -25,6 +25,9 @@ class User < ActiveRecord::Base
       user.uid = auth["uid"]
       user.name = auth["info"]["nickname"]
     end
+    puts(:session_token)
+    #@user = User.find_by_uid(auth["uid"])
+    #@user.players.create!()
   end
   
   #def User::create_user!(params)
