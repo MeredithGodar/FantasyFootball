@@ -1,5 +1,5 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top: 60px; background-image:url('unnamed.jpg'); background-repeat:no-repeat; background-position:center; background-attachement:fixed; background-size:cover; }
+body { padding-top:60px; background-image:url('unnamed.jpg'); background-repeat:no-repeat; background-position:center; background-attachement:fixed; background-size:cover; }
 .navbar .brand { font-size: 25px; color:#000000; }
 h1 { color:#ffffff; }
 h2 { color:#ffffff; }
