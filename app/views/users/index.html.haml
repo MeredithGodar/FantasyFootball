@@ -2,15 +2,3 @@
 
 %p.login= link_to 'Sign in with Twitter', "/auth/twitter"
 %p.login= link_to 'Sign in with GitHub', "/auth/github"
-
-
-=form_tag users_path do
-   =label :user, :user_id, 'User-ID'
-   =text_field :user, 'user_id'
-    
-   =label :user, :password, 'Password'
-   =password_field :user, 'password'
-  
-   =submit_tag 'Sign In'
-  
-=link_to 'Create Account', new_user_path
