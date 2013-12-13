@@ -17,6 +17,13 @@ ActiveRecord::Schema.define(:version => 20131108030537) do
     t.string   "name"
     t.string   "position"
     t.string   "team"
+    t.string   "college"
+    t.string   "birthdate"
+    t.string   "user"
+    t.string   "height"
+    t.string   "weight"
+    t.string   "url"
+    t.string   "number"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
