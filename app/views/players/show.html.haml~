@@ -21,6 +21,7 @@
   %li
     Weight:
     = @player.weight
+    lbs
   %li
     Birthdate:
     = @player.birthdate  
