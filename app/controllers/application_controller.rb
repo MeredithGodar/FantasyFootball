@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+	include BootstrapFlashHelper
   protect_from_forgery
   protected
   def set_current_user
