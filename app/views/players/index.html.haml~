@@ -2,6 +2,10 @@
 
 - if @current_user
 	%h1 Your Team
+	%h2 Current Score:
+	- @current_user.players.each do |player|
+		- totalScore =+ player[:stats[:score]]
+	%h2 totalScore
 	%table#players
 		%thead
 			%tr

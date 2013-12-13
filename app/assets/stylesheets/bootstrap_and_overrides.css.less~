@@ -22,6 +22,11 @@ h2 {
 	color: #ffffff; 
 }
 
+h3 {
+	color: #ffffff;
+	font-size: 22px;
+}
+
 li { 
 	color: #ffffff; 
 	font-size: 18px; 
